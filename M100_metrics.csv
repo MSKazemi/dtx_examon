@@ -1,6 +1,4 @@
 name,plugin
-
-eeee
 Gpu0_app_clock_violation,ganglia_pub
 Gpu0_bar1_free,ganglia_pub
 Gpu0_bar1_total,ganglia_pub
