@@ -189,7 +189,7 @@ check_dir(pth_data_files)
 check_dir(loggin_path)
 
 time_for_start_script = 22
-processes = 30
+processes = 20
 number_rows_chunks = 2
 metrics_path = 'M100_metrics.csv'
 pid = os.getpid()

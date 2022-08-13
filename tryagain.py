@@ -149,7 +149,7 @@ def TryAgain(metrics):
        
 
 
-    complete_date = pd.date_range(start='2022-08-10 00:00:00', 
+    complete_date = pd.date_range(start='2020-03-09 00:00:00', 
                                   end=datetime.datetime.now(pytz.timezone('Europe/Rome')).date()-datetime.timedelta(days=1), 
                                   freq='24H')
 
@@ -238,8 +238,8 @@ def TryAgain(metrics):
           
        
 now = datetime.datetime.now(pytz.timezone('Europe/Rome'))
-pth_data_files = '/nas/cinecadataset/Comp_5/'
-loggin_path =    '/nas/cinecadataset/Comp_5/log/TryAgainlog_'+str(datetime.datetime.strftime(now, '%Y-%m-%d %H:%M:%S').replace(':', '-').replace(' ', '_'))+'/'
+pth_data_files = '/nas/cinecadataset/Comp_2/'
+loggin_path =    '/nas/cinecadataset/Comp_2/log/TryAgainlog_'+str(datetime.datetime.strftime(now, '%Y-%m-%d %H:%M:%S').replace(':', '-').replace(' ', '_'))+'/'
 check_dir(loggin_path)
 
 main_logger = logging.getLogger(str(os.getpid()))
@@ -259,7 +259,7 @@ if not main_logger.handlers:
 
 
 time_for_start_script = 22
-processes = 1
+processes = 20
 number_rows_chunks = 1
 
 
